@@ -1,0 +1,107 @@
+{
+  "id": "8128de1c-5226-4a87-af9c-422998aa76f4",
+  "version": "2.0",
+  "name": "microsoft",
+  "url": "https://arxiv-sanity-lite.com/",
+  "tests": [{
+    "id": "929245ba-bf76-4bf2-bd5d-29c293ff86d4",
+    "name": "arxiv-sanity recent uploads sanity",
+    "commands": [{
+      "id": "7613655d-b4a9-42fc-b7e8-bdea241d4890",
+      "comment": "",
+      "command": "open",
+      "target": "https://arxiv-sanity-lite.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31a9639d-417a-419c-a427-84c06e651d42",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1138x863",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4af1370-2a35-4a9f-84fb-5dfb7df38fbf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=random last week",
+      "targets": [
+        ["linkText=random last week", "linkText"],
+        ["css=#cbox_fast > a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'random last week')]", "xpath:link"],
+        ["xpath=//div[@id='cbox_fast']/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/?rank=random&time_filter=7')]", "xpath:href"],
+        ["xpath=//div[2]/a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'random last week')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "004d5cd7-c372-4b11-8fa7-19f2b8c27043",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=random last week",
+      "targets": [
+        ["linkText=random last week", "linkText"],
+        ["css=#cbox_fast > a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'random last week')]", "xpath:link"],
+        ["xpath=//div[@id='cbox_fast']/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/?rank=random&time_filter=7')]", "xpath:href"],
+        ["xpath=//div[2]/a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'random last week')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61859267-3275-4384-84c6-2689977a87e2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=recent",
+      "targets": [
+        ["linkText=recent", "linkText"],
+        ["css=#cbox_fast > a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'recent')]", "xpath:link"],
+        ["xpath=//div[@id='cbox_fast']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/?rank=time')]", "xpath:href"],
+        ["xpath=//div[2]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'recent')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b788b532-3345-4ded-b21e-13c8d3468259",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rel_paper:nth-child(1) > .rel_title > a",
+      "targets": [
+        ["css=.rel_paper:nth-child(1) > .rel_title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'DistriFusion: Distributed Parallel Inference for High-Resolution\n  Diffusion Models')]", "xpath:link"],
+        ["xpath=//div[@id='paperList']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://arxiv.org/abs/2402.19481']", "xpath:href"],
+        ["xpath=//div/div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "627177c6-b4cd-41c6-9e1c-2072262366c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Download PDF",
+      "targets": [
+        ["linkText=Download PDF", "linkText"],
+        ["css=.download-pdf", "css:finder"],
+        ["xpath=(//a[contains(text(),'Download PDF')])[2]", "xpath:link"],
+        ["xpath=//div[@id='abs-outer']/div[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/pdf/2402.19481.pdf')])[2]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8502c251-db95-4ee5-9120-a2e7e05cd4b8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["929245ba-bf76-4bf2-bd5d-29c293ff86d4"]
+  }],
+  "urls": ["https://arxiv-sanity-lite.com/"],
+  "plugins": []
+}
